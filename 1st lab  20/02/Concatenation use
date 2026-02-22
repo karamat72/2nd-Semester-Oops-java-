@@ -1,0 +1,12 @@
+class Main {
+    public static void main(String[] arg) {
+        int age = 45;
+        String name1 = "Ali";
+         String name2= "Alihasssan";
+        
+         String name3=name1+ " and " + name2;
+         
+        
+        System.out.println(name3);
+    }
+}
