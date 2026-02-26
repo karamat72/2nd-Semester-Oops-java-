@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class StudentDetail {
+    public static void main(String arg[]) {
+        Scanner s = new Scanner(System.in);
+
+        System.out.println("Enter the age:");
+        int age = s.nextInt();
+
+        System.out.println("Enter the CGPA:");
+        double cgpa = s.nextDouble();
+        s.nextLine();   // clear buffer
+
+        System.out.println("Enter the NAME:");
+        String name = s.nextLine();
+
+        System.out.println("Name of Student: " + name);
+        System.out.println("Age of Student: " + age);
+        System.out.println("CGPA of Student: " + cgpa);
+
+        s.close();
+    }
+}
