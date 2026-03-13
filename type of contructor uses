@@ -1,0 +1,94 @@
+import java.util.Scanner;
+
+public class Result
+{
+    int mark;
+    String name;
+    char grade;
+    double totalmark;
+
+    Result()    //Default Constructor
+    {
+        Scanner s = new Scanner(System.in);
+
+        System.out.println("Enter the name of student:");
+        this.name = s.nextLine();
+
+        System.out.println("Enter the mark of student:");
+        this.mark = s.nextInt();
+
+        System.out.println("Enter the grade of student:");
+        this.grade = s.next().charAt(0);
+
+        System.out.println("Enter the total mark of student:");
+        this.totalmark = s.nextDouble();
+    }
+
+    void display()
+    {
+        System.out.println("NAME OF STUDENT : " + this.name);
+        System.out.println("MARK OF STUDENT : " + this.mark);
+        System.out.println("GRADE OF STUDENT : " + this.grade);
+        System.out.println("TOTAL MARK : " + this.totalmark);
+    }
+
+    public static void main(String[] arr)
+    {
+        Result r = new Result();
+        r.display();
+    }
+}
+
+
+
+
+
+// paramerized Contructor
+
+
+import java.util.Scanner;
+
+public class Result
+{
+    int mark;
+    String name;
+    char grade;
+    double totalmark;
+
+    // Parameterized Constructor
+    Result(String name, int mark, char grade, double totalmark)
+    {
+        this.name = name;
+        this.mark = mark;
+        this.grade = grade;
+        this.totalmark = totalmark;
+    }
+
+    void display()
+    {
+        System.out.println("NAME OF STUDENT : " + this.name);
+        System.out.println("MARK OF STUDENT : " + this.mark);
+        System.out.println("GRADE OF STUDENT : " + this.grade);
+        System.out.println("TOTAL MARK : " + this.totalmark);
+    }
+
+    public static void main(String[] arr)
+    {
+        Scanner s = new Scanner(System.in);
+
+        System.out.println("Enter the name of student:");
+        String name = s.nextLine();
+
+        System.out.println("Enter the mark of student:");
+        int mark = s.nextInt();
+
+        System.out.println("Enter the grade of student:");
+        char grade = s.next().charAt(0);
+
+        System.out.println("Enter the total mark of student:");
+        double totalmark = s.nextDouble();
+
+        Result r = new Result(name, mark, grade, totalmark);
+        r.display();
+    }
+}
