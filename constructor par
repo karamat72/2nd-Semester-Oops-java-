@@ -1,0 +1,65 @@
+class SmartLight {
+    String brand;
+    int brightness;
+    SmartLight( String brand,int brightness)
+{
+    this.brand=brand;
+    this.brightness=brightness;
+}
+void display()
+{
+      System.out.println("SHOWCASE : "+brand);
+      System.out.println("SHOWCASE LIGHT : "+brightness);
+  
+}
+ public static void main(String[]arg)
+ {
+     SmartLight s=new SmartLight("Alijee",9099);
+     s.display();
+ }
+    
+}
+
+
+
+
+/* Write a Java program to create a class Mobile with:
+
+company
+
+model
+
+price
+
+Use a parameterized constructor and print the details.
+*/
+
+
+
+
+
+
+public class mobile
+{
+    String company;
+    int model;
+    double price;
+mobile(String company,int model,double price)
+{
+        this.company=company;
+       this.model=model;
+       this.price=price;
+}
+void display()
+{
+    System.out.println("Company name is : "+company);
+    System.out.println("model of mobile : "+model);
+    System.out.println("price of MOBILE IS : "+price);
+    
+}
+public static void main(String[]arg)
+{
+    mobile data=new mobile(" VIVO  ",2020,23000);
+    data.display();
+}
+}
