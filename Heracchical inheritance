@@ -1,0 +1,31 @@
+class A {
+void showA()
+{
+System.out.println("....A....");
+    }
+}
+class B extends A
+{
+void showB()
+{
+System.out.println("....B....");
+}
+}
+class C extends A
+{
+void showB()
+{
+System.out.println("....B....");
+}
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+
+        // Object of B
+        C ob2 = new C();
+        ob2.showA(); // inherited from A
+        ob2.showB();
+    }
+}
