@@ -1,0 +1,20 @@
+class Addition {
+
+    int Add(int a, int b) {
+        return (a + b);
+    }
+
+    int Add(int a, int b, int c) {
+        return (a + b + c);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        Addition obj = new Addition();
+
+        System.out.println(obj.Add(1, 6));      // 7
+        System.out.println(obj.Add(1, 6, 9));   // 16
+    }
+}
