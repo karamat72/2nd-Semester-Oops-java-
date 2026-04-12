@@ -1,0 +1,46 @@
+// HIERARCHICAL INHERITANCE
+class Parent {
+    void showA() {
+        System.out.println("PARENT");
+    }
+}
+
+class Child extends Parent {
+    void showB() {
+        System.out.println("CHILD");
+    }
+}
+class Son extends Parent
+{
+    void showC() {
+        System.out.println("  SON   ");
+    }
+}
+class Grils extends Parent
+{
+    void showD() {
+        System.out.println("  ...GIRLS ....  ");
+    }
+}
+class Boys extends Parent
+{
+    void showE() {
+        System.out.println("  ....BOYS....  ");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Boys obj=new Boys();
+       obj.showA();
+       obj.showE();
+       
+       Grils ob=new Grils();
+       ob.showD();
+       //ob.showC();
+        Child o=new Child();
+       o.showB();
+       Son oj=new Son();
+       oj.showC();
+      }
+}
