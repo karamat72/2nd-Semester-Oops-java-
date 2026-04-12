@@ -1,0 +1,32 @@
+// MULTILEVEL INHERITANCE
+class Parent {
+    void showA() {
+        System.out.println("PARENT");
+    }
+}
+
+class Child extends Parent {
+    void showB() {
+        System.out.println("CHILD");
+    }
+}
+class Son extends Child
+{
+    void showC() {
+        System.out.println("  SON   ");
+    }
+}
+
+
+public class Main {
+    public static void main(String[] args) {
+        Son obj1=new Son();
+        obj1.showB();
+        obj1.showC();
+                System.out.println("......");
+
+        Child ob = new Child();
+        ob.showA();
+      // ob.showB();
+    }
+}
