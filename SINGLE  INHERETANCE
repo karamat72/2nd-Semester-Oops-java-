@@ -1,0 +1,19 @@
+class Parent {
+    void showA() {
+        System.out.println("PARENT");
+    }
+}
+
+class Child extends Parent {
+    void showB() {
+        System.out.println("CHILD");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Child ob = new Child();
+        ob.showA();
+        ob.showB();
+    }
+}
