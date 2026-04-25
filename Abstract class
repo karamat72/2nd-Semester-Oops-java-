@@ -1,0 +1,24 @@
+abstract class Name {
+    abstract void group();
+    void show()
+    {
+        System.out.println(" KARAMAT ...");
+        
+    }
+}
+    class Roll extends Name
+    {
+ void group()
+ {
+          System.out.println(" ...2455678 ...");
+ }
+}
+public class Main {
+    public static void main(String[] args)
+    {
+        Name d=new Roll();
+      
+        d.show();
+          d.group();
+    }
+}
