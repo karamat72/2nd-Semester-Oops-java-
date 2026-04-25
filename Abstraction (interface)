@@ -1,0 +1,23 @@
+interface Name {
+    void group();
+    default void show()
+    {
+              System.out.println(" KARAMAT ...");  
+    }
+}
+ class Roll implements Name
+ {
+public void group()
+ {
+          System.out.println(" ...2455678 ...");
+ }
+}
+public class Main {
+    public static void main(String[] args)
+    {
+        Name d=new Roll();
+      
+        d.show();
+          d.group();
+    }
+}
