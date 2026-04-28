@@ -22,3 +22,31 @@ public class Main {
           d.group();
     }
 }
+// EXAMPLE
+
+abstract class Bank {
+
+    abstract void interestRate();
+
+    void displayBank() {
+        System.out.println("Welcome to Bank");
+    }
+}
+
+class HBL extends Bank {
+
+    void interestRate() {
+        System.out.println("Interest Rate = 12%");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        HBL h = new HBL();
+
+        h.displayBank();
+        h.interestRate();
+    }
+}
+//
