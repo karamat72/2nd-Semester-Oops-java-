@@ -1,0 +1,36 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        
+        int[] num=new int[5];
+          System.out.println("ENTER THE 4 NUMBER");
+          for(int i = 0; i < num.length; i++)
+          {
+          num[i]=sc.nextInt();
+          } 
+               System.out.println("SEQUENCE OF NUMBER");
+
+          for(int i = 0; i < num.length; i++)      // sorted array
+        {
+            for(int j = 0; j < num.length - 1; j++)    // compare array
+              {
+                  if(num[j]>num[j+1])
+                  {
+                      int temp=num[j];
+                       num[j]=num[j+1];
+                      num[j+1]=temp;
+                     ;
+                  }
+                  
+              }
+       
+        }
+   for(int i = 0; i < num.length; i++)
+   {
+                
+
+                System.out.println(num[i]);
+    }
+}
+}             
